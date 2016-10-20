@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Александр Уразаев](https://up.htmlacademy.ru/htmlcss/15/user/61574).
-* Наставник: [Дарья Сабурова] (https://htmlacademy.ru/profile/id117612)
+* Наставник: [Дарья Сабурова] (https://up.htmlacademy.ru/htmlcss/15/user/117612)
 
 ---
 
