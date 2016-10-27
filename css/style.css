@@ -1,0 +1,19 @@
+body {
+    font-size: 16px;
+    line-height: 1.375;
+    color: rgb(50, 50, 50);
+    font-weight: normal;
+    font-family: "Roboto";
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 1.25;
+    color: rgb(50, 50, 50);
+    font-weight: normal;
+    text-align: left;
+}
+
+h2 {
+    /* в разметке я не задействовал еще этот тег, какие ему свойства назначить еще не известно */
+}
