@@ -6,7 +6,12 @@ body {
     font-family: "Roboto";
 }
 
-h1 {
+
+h1 { 
+
+}
+
+h2 {
     font-size: 24px;
     line-height: 1.25;
     color: rgb(50, 50, 50);
@@ -14,6 +19,11 @@ h1 {
     text-align: left;
 }
 
-h2 {
-    /* в разметке я не задействовал еще этот тег, какие ему свойства назначить еще не известно */
+.slider-title {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+    
 }
