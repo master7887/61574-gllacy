@@ -36,7 +36,7 @@
 
             <ul class="header-assets">
                 <li>
-                    <a href="#" class="search"><img src="img/ico-search.png" alt="Поиск"></a>
+                    <a href="#" class="header-assets-search"><img src="img/ico-search.png" alt="Поиск"></a>
                     <div class="modal search">
                         <form action="#">
                             <input type="text" name="search" placeholder="Что ищем?">
@@ -44,7 +44,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="login"><img src="img/ico-enter.png" alt="Вход">Вход</a>
+                    <a href="#" class="header-assets-login"><img src="img/ico-enter.png" alt="Вход">Вход</a>
                     <div class="modal login-form">
                         <form action="#">
                             <input type="text" name="login" placeholder="Электронная почта">
@@ -56,26 +56,30 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#" class="cart active"><img src="img/ico-cart-active.png" alt="В корзине">2 товара</a>
+                    <a href="#" class="header-assets-cart active"><img src="img/ico-cart-active.png" alt="В корзине">2 товара</a>
+                    <div class="cart-open-container">
+                        <table class="cart-open">
+                            <tr>
+                                <td class="cart-open-cancel">Удалить</td>
+                                <td class="cart-open-img"><img src="img/cart-open-img1.png" alt="товар 1"></td>
+                                <td class="cart-open-name">Пломбир с апельсиновым джемом</td>
+                                <td class="cart-open-descr">1,5 кг х <span>200 руб.</span></td>
+                                <td class="cart-open-price">300 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="cart-open-cancel">Удалить</td>
+                                <td class="cart-open-img"><img src="img/cart-open-img1.png" alt="товар 1"></td>
+                                <td class="cart-open-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="cart-open-descr">1,5 кг х <span>300 руб.</span></td>
+                                <td class="cart-open-price">450 руб.</td>
+                            </tr>
+                        </table>
+
+                        <p class="cart-open-total">Итого: 750 руб.</p>
+                        <a href="#" class="btn cart-open-btn">Оформить заказ</a>
+                    </div>
+                    <!-- cart-open-container-->
                 </li>
-                <table class="cart-open">
-                    <tr>
-                        <td class="cart-open-cancel">Удалить</td>
-                        <td class="cart-open-img"><img src="img/cart-open-img1.png" alt="товар 1"></td>
-                        <td class="cart-open-name">Пломбир с апельсиновым джемом</td>
-                        <td class="cart-open-descr">1,5 кг х <span>200 руб.</span></td>
-                        <td class="cart-open-price">300 руб.</td>
-                    </tr>
-                    <tr>
-                        <td class="cart-open-cancel">Удалить</td>
-                        <td class="cart-open-img"><img src="img/cart-open-img1.png" alt="товар 1"></td>
-                        <td class="cart-open-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td class="cart-open-descr">1,5 кг х <span>300 руб.</span></td>
-                        <td class="cart-open-price">450 руб.</td>
-                    </tr>
-                </table>
-                <p class="total">Итого: 750 руб.</p>
-                <a href="" class="btn cart-open-btn">Оформить заказ</a>
             </ul>
             <div class="time">С 10 до 20, ежедневно
                 <br>
@@ -92,40 +96,48 @@
             <h1>Сливочное мороженое</h1>
             <div class="filter">
                 <form action="#" method="post">
-                    <strong>Сортировка:</strong>
                     <div class="filter-inner">
-                        <select name="sort" id="">
+                        <label for="sort">Сортировка:</label>
+                        <select name="sort" id="sort">
                             <option value="1">по популярности</option>
                             <option value="2">по популярности</option>
                             <option value="3">по популярности</option>
                         </select>
                     </div>
-                    <strong>Цена: 100 руб. – 500 руб.</strong>
                     <div class="filter-inner">
-                        <input type="range" min="0" max="1000" step="1" value="100">
+                        <label for="range">Цена: 100 руб. – 500 руб.</label>
+                        <input type="range" min="0" max="1000" step="1" value="100" id="range">
                     </div>
                     <strong>Жирность:</strong>
                     <div class="filter-inner">
-                        <input type="radio" name="0"> 0%
-                        <input type="radio" name="10" checked> до 10%
-                        <input type="radio" name="30"> до 30%
-                        <input type="radio" name="over30"> выше 30%
+                        <label>
+                            <input type="radio" name="0"> 0%</label>
+                        <label>
+                            <input type="radio" name="10" checked> до 10%</label>
+                        <label>
+                            <input type="radio" name="30"> до 30%</label>
+                        <label>
+                            <input type="radio" name="over30"> выше 30%</label>
                     </div>
                     <strong>Наполнители:</strong>
                     <div class="filter-inner">
-                        <input type="checkbox" checked> шоколадные
-                        <input type="checkbox" checked> сахарные присыпки
-                        <input type="checkbox"> фрукты
-                        <input type="checkbox"> сиропы
-                        <input type="checkbox"> джемы
+                        <label>
+                            <input type="checkbox" checked> шоколадные</label>
+                        <label>
+                            <input type="checkbox" checked> сахарные присыпки</label>
+                        <label>
+                            <input type="checkbox"> фрукты</label>
+                        <label>
+                            <input type="checkbox"> сиропы</label>
+                        <label>
+                            <input type="checkbox"> джемы</label>
                     </div>
                     <button type="submit" href="#" class="filter-btn">Применить</button>
                 </form>
             </div>
             <!-- filter-->
-        </section>
-        <!--content-->
-        <section class="products">
+            
+            <section class="products">
             <article class="products-item">
                 <div class="products-image"><img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
                 <div class="products-price">310 <span>/кг</span></div>
@@ -240,6 +252,10 @@
             <!--pagination-->
         </section>
         <!--products-->
+            
+        </section>
+        <!--content-->
+        
         <footer class="footer-top-border">
             <div class="footer-social">
                 <ul>
