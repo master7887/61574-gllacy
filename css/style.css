@@ -45,12 +45,13 @@ h2 {
     text-align: left;
 }
 
-
-/* сделать ширину 100 макс ширину 1200 и мин ширину 900 */
-
 .container {
-    width: 1146px;
     margin: 0 auto;
+    max-width: 1200px;
+/*    min-width: 848px;*/
+    /*    width: 100%;*/
+    padding: 0 26px;
+    /*    пока временно так отступы обозначу - потом или медиазапросы или в процентах попробую просчитать */
 }
 
 
@@ -196,7 +197,22 @@ header .time b {
     vertical-align: top;
     font-size: 16px;
     width: 268px;
-    margin-right: 24px;
+    padding-right: 12px;
+    padding-left: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.375;
+    text-decoration: underline;
+/*    position: relative;*/
+}
+
+.hits article.hover,
+.products-item.hover {
+    border-radius: 5px;
+    background-color: rgba(248, 247, 244, 0.3);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+/*    position: absolute;*/
 }
 
 .hits article:last-child {
@@ -244,6 +260,9 @@ header .time b {
     background: url("../img/tmp-map.png") no-repeat;
     background-size: cover;
     min-height: 430px;
+    margin-left: -13px;
+    margin-right: -13px;
+    
 }
 
 .map-overflow {
@@ -284,7 +303,6 @@ footer li {
 }
 
 
-
 /* [[9]] продукты в категории */
 
 .products {
@@ -297,15 +315,19 @@ footer li {
     vertical-align: top;
     font-size: 16px;
     width: 268px;
-    margin-right: 24px;
+    padding-right: 12px;
+    padding-left: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.375;
+    text-decoration: underline;
 }
 
-.products article:nth-child(4n) {
-    margin-right: 0;
-}
 
 .pagination {
+    display: block;
     margin-top: 40px;
     font-size: 14px;
-        float: right;
+/*    float: right;*/
 }
