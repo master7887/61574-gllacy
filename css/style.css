@@ -45,6 +45,9 @@ h2 {
     text-align: left;
 }
 
+
+/* сделать ширину 100 макс ширину 1200 и мин ширину 900 */
+
 .container {
     width: 1146px;
     margin: 0 auto;
@@ -114,7 +117,7 @@ header .time b {
 }
 
 .slider-item:nth-child(1) {
-    background: url("img/icecream.png") no-repeat center top;
+    background: url("../img/icecream.png") no-repeat center top;
 }
 
 .slider-item:nth-child(2),
@@ -238,7 +241,7 @@ header .time b {
 /* [[7]] карта с главной */
 
 .map {
-    background: url("img/tmp-map.png") no-repeat;
+    background: url("../img/tmp-map.png") no-repeat;
     background-size: cover;
     min-height: 430px;
 }
