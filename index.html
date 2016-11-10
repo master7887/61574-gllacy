@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -17,46 +18,36 @@
 
 
             <nav>
-                <ul>
-                    <li class="active"><a href="#">Каталог</a>
+                <ul class="main-nav">
+                    <li><a href="#">Каталог</a>
+
                         <ul class="subnav">
-                            <li><a href="#"><strong>Новинки</strong></a></li>
-                            <li><a href="#">Сливочное</a></li>
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="catalog.html">Сливочное</a></li>
                             <li><a href="#">Щербеты</a></li>
                             <li><a href="#">Фруктовый лед</a></li>
-                            <li><a href="#">Мелорин</a></li>
+                            <li class="active"><a href="#">Мелорин</a></li>
                         </ul>
+
                     </li>
                     <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О Компании</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Каталог</a></li>
+                    <li class="active"><a href="#">О Компании</a></li>
                 </ul>
             </nav>
 
             <ul class="header-assets">
                 <li>
-                    <a href="#" class="header-assets-search"><img src="img/ico-search.png" alt="Поиск"></a>
-                    <div class="modal search">
-                        <form action="#">
-                            <input type="text" name="search" placeholder="Что ищем?">
-                        </form>
-                    </div>
+                    <a href="#" class="header-assets-search">
+                         Поиск
+                    </a>
+
                 </li>
                 <li>
-                    <a href="#" class="header-assets-login"><img src="img/ico-enter.png" alt="Вход">Вход</a>
-                    <div class="modal login-form">
-                        <form action="#">
-                            <input type="text" name="login" placeholder="Электронная почта">
-                            <input type="text" name="password" placeholder="Пароль">
-                            <button class="btn btn-submit" type="submit">Войти</button>
-                            <a href="#" class="forgoten">Забыли пароль?</a>
-                            <a href="#" class="register">Новая регистрация</a>
-                        </form>
-                    </div>
+                    <a href="#" class="header-assets-login">Вход</a>
+
                 </li>
                 <li>
-                    <a href="#" class="header-assets-cart"><img src="img/ico-cart.png" alt="В корзине">Пусто</a>
+                    <a href="#" class="header-assets-cart">Пусто</a>
                 </li>
             </ul>
             <div class="time">С 10 до 20, ежедневно
@@ -114,13 +105,13 @@
             <div class="promo promo-left">
                 <div class="promo-title">Малинка даром!</div>
                 <div class="promo-content">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</div>
-                <a class="btn promo-btn">Хочу варенье!</a>
+                <a class="btn promo-btn" href="#">Хочу варенье!</a>
             </div>
 
             <div class="promo promo-right">
                 <div class="promo-title">Шоколадки даром!</div>
                 <div class="promo-content">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</div>
-                <a class="btn promo-btn">Хочу шоколадки!</a>
+                <a class="btn promo-btn" href="#">Хочу шоколадки!</a>
             </div>
         </section>
 
@@ -130,7 +121,7 @@
             <article class="hits-item">
                 <div class="hits-sticker"><img src="img/hit.png" alt="Хит"></div>
                 <div class="hits-image"><img src="img/product-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                <div class="hits-price">310 <span>/кг</span></div>
+                <div class="hits-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
                 <div class="hits-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
             </article>
             <!-- hits-item-->
@@ -138,7 +129,7 @@
             <article class="hits-item">
                 <div class="hits-sticker"><img src="img/hit.png" alt="Хит"></div>
                 <div class="hits-image"><img src="img/product-2.png" alt="Сливочно-кофейное с кусочками шоколада"></div>
-                <div class="hits-price">380 <span>/кг</span></div>
+                <div class="hits-price">380 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
                 <div class="hits-title">Сливочно-кофейное с кусочками шоколада</div>
             </article>
             <!-- hits-item-->
@@ -146,29 +137,36 @@
             <article class="hits-item hover">
                 <div class="hits-sticker"><img src="img/hit.png" alt="Хит"></div>
                 <div class="hits-image"><img src="img/product-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада"></div>
-                <div class="hits-price">355 <span>/кг</span></div>
-                <div class="hits-title">Сливочно-клубничное с присыпкой из белого шоколада</div>
+                <div class="hits-price">355 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                <div class="hits-title">Сливочно-клубничное с
+                    <br> присыпкой из белого шоколада</div>
             </article>
             <!-- hits-item-->
 
             <article class="hits-item">
                 <div class="hits-sticker"><img src="img/hit.png" alt="Хит"></div>
                 <div class="hits-image"><img src="img/product-4.png" alt="Сливочное крем-брюле с карамельной подливкой"></div>
-                <div class="hits-price">415 <span>/кг</span></div>
+                <div class="hits-price">415 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
                 <div class="hits-title">Сливочное крем-брюле с карамельной подливкой</div>
             </article>
             <!-- hits-item-->
         </section>
         <!--hits-->
 
-        <section class="index-content">
+        <section class="index-content row">
             <h2>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+
             <ul>
                 <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-                <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+
+
                 <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+
+                <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </li>
+
                 <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
             </ul>
+
         </section>
         <!--index-content-->
 
@@ -179,11 +177,13 @@
             </div>
 
             <div class="subscribe">
-                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-                <form action="#" method="post">
-                    <input type="text" name="email" placeholder="Электронная почта">
-                    <button class="btn subscribe-submit" type="submit">Отправить</button>
-                </form>
+                <div class="subscribe-inner">
+                    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+                    <form action="#" method="post">
+                        <input type="text" name="email" placeholder="Электронная почта">
+                        <button class="btn subscribe-submit" type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
         </section>
         <!-- addiditions-->
@@ -201,16 +201,7 @@
                     <a class="btn feedback-btn">Форма обратной связи</a>
                 </div>
                 <!--map-overflow-->
-                <div class="modal feedback">
-                    <a href="#" class="close">close</a>
-                    <form action="#" method="post">
-                        <input type="text" name="name" placeholder="Как вас зовут?">
-                        <input type="text" name="email" placeholder="Ваша почта для ответа?">
-                        <textarea>Напишите что-нибудь...</textarea>
-                        <button class="btn feedback-submit" type="submit">Отправить</button>
-                    </form>
-                </div>
-                <!-- modal.feedback-->
+
 
             </div>
         </section>
@@ -255,7 +246,30 @@
     </div>
     <!--container-->
 
+    <div class="modal login-form">
+        <form action="#">
+            <input type="text" name="login" placeholder="Электронная почта">
+            <input type="text" name="password" placeholder="Пароль">
+            <button class="btn btn-submit" type="submit">Войти</button>
+            <a href="#" class="forgoten">Забыли пароль?</a>
+            <a href="#" class="register">Новая регистрация</a>
+        </form>
+    </div>
+    <div class="modal search">
+        <form action="#">
+            <input type="text" name="search" placeholder="Что ищем?">
+        </form>
+    </div>
 
+    <div class="modal feedback">
+        <a href="#" class="close">close</a>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Как вас зовут?">
+            <input type="text" name="email" placeholder="Ваша почта для ответа?">
+            <textarea>Напишите что-нибудь...</textarea>
+            <button class="btn feedback-submit" type="submit">Отправить</button>
+        </form>
+    </div>
 </body>
 
 </html>
