@@ -11,9 +11,11 @@ body {
 body > input[type="radio"] {
     display: none;
 }
+
 .bg-main1 {
     background: #9aafa3;
 }
+
 .row:after,
 .clr:after {
     clear: both;
@@ -182,6 +184,7 @@ header nav {
 .subnav a:hover {
     background-color: #fbded7;
 }
+
 .subnav a:active {
     background-color: #f6b5a5;
 }
@@ -252,6 +255,10 @@ a.header-assets-search:after {
 }
 
 a.header-assets-search:hover:after {
+    background: url("../img/ico-search-hover.png") no-repeat;
+}
+
+a.header-assets-search:hover:after {
     /*###Нарезать спрайты с наведениями из стайлгайда*/
 }
 
@@ -272,6 +279,10 @@ a.header-assets-login:after {
 }
 
 a.header-assets-login:hover:after {
+    background: url("../img/ico-enter-hover.png") no-repeat;
+}
+
+a.header-assets-login:hover:after {
     /*###Нарезать спрайты с наведениями из стайлгайда*/
 }
 
@@ -289,6 +300,10 @@ a.header-assets-cart:after {
     top: 5px;
     background: url("../img/ico-cart.png") no-repeat;
     z-index: 20;
+}
+
+a.header-assets-cart:hover:after {
+    background: url("../img/ico-cart-hover.png") no-repeat;
 }
 
 .header-assets > li:nth-child(3) a {
@@ -524,8 +539,6 @@ header .time b {
     padding-right: 0;
 }
 
-
-
 .production-sticker {
     position: absolute;
 }
@@ -573,7 +586,8 @@ header .time b {
     margin-bottom: 20px;
     display: none;
 }
-.production-item:hover  .production-preview {
+
+.production-item:hover .production-preview {
     display: block;
 }
 
@@ -581,7 +595,7 @@ header .time b {
     background-color: rgba(248, 247, 244, 0.3);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     margin-bottom: -100px;
-/*    ##высчитать правильно*/
+    /*    ##высчитать правильно*/
 }
 
 .production-preview .btn-preview {
@@ -730,7 +744,6 @@ header .time b {
     padding: 9px 15px;
     width: 338px;
     margin-right: 8px;
-    
 }
 
 .subscribe-form .subscribe-submit {
@@ -969,29 +982,26 @@ footer a:hover {
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-
-
 .form-control input[type="text"],
 .form-control input[type="email"],
 .form-control input[type="password"],
 .form-control input[type="search"],
 .form-control textarea {
-/*
+    /*
   font-size: 16px;
   color: rgb(50, 50, 50);
   font-weight: bold;
   line-height: 1.5;
 */
-
 }
+
 .form-control input[type="text"]:hover,
 .form-control input[type="email"]:hover,
 .form-control input[type="password"]:hover,
 .form-control input[type="search"]:hover,
 .form-control textarea:hover {
-  border: 2px solid rgba(154, 154, 154, 0.52);
-        padding: 8px 14px;
-
+    border: 2px solid rgba(154, 154, 154, 0.52);
+    padding: 8px 14px;
 }
 
 .form-control input[type="text"]:focus,
@@ -999,17 +1009,16 @@ footer a:hover {
 .form-control input[type="password"]:focus,
 .form-control input[type="search"]:focus,
 .form-control textarea:focus {
-  border: 2px solid rgba(46, 136, 228, 0.52);
-        padding: 8px 14px;
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    padding: 8px 14px;
 }
 
 .form-control input:-ms-input-placeholder {
-  color: #999999;
-      font-weight: 300;
-
+    color: #999999;
+    font-weight: 300;
 }
 
 .form-control textarea:-ms-input-placeholder {
-  color: #999999;
-      font-weight: 300;
+    color: #999999;
+    font-weight: 300;
 }
