@@ -221,7 +221,7 @@ header nav {
     z-index: 10;
 }
 
-.header-assets a:hover {
+.header-assets > li > a:hover {
     background-color: rgba(255, 255, 255, 1);
     color: #373737;
 }
@@ -673,6 +673,9 @@ header .time b {
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     margin-bottom: -100px;
     /*    ##высчитать правильно*/
+    
+    position: relative;
+    z-index: 200;
 }
 
 .production-preview .btn-preview {
@@ -1110,9 +1113,11 @@ footer a:hover {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
 }
 
-.modal.feedback {
+.feedback {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -1122,6 +1127,8 @@ footer a:hover {
     width: 429px;
     padding: 15px 24px 25px 24px;
     z-index: 1100;
+    border-radius: 15px;
+    display: none;
 }
 
 .modal.feedback .btn {
@@ -1133,7 +1140,7 @@ footer a:hover {
     cursor: pointer;
     line-height: 1.333;
     border: none;
-    float:right;
+    float: right;
 }
 
 .modal.feedback p {
@@ -1159,4 +1166,89 @@ footer a:hover {
     text-align: left;
     margin: 0;
     margin-bottom: 20px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal .close::before,
+.modal .close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 22px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 1px;
+}
+
+.modal .close::before {
+    transform: rotate(45deg);
+}
+
+.modal .close::after {
+    transform: rotate(-45deg);
+}
+
+.show {
+    display: block !important;
+}
+
+.animate {
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(2000px);
+    }
+    60% {
+        transform: translateY(-40px);
+    }
+    70% {
+        transform: translateY(20px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    90% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-20px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(20px);
+    }
 }
