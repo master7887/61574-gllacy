@@ -27,13 +27,6 @@ body > input[type="radio"] {
     padding-top: 7px;
 }
 
-header .cart-open-container,
-.login-form,
-.search,
-.feedback {
-    display: none;
-}
-
 h1 {}
 
 h2 {
@@ -206,13 +199,14 @@ header nav {
     display: inline-block;
     vertical-align: top;
     margin-right: -3px;
+    position: relative;
 }
 
 .header-assets > li:nth-child(3) {
     margin-right: 0;
 }
 
-.header-assets a {
+.header-assets > li > a {
     display: block;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
@@ -232,15 +226,105 @@ header nav {
     color: #373737;
 }
 
-a.header-assets-search {
+li > a.header-assets-search {
     padding: 8px;
     font-size: 0;
     width: 16px;
     height: 16px;
 }
 
-a.header-assets-search:hover {
-    /*###Нарезать спрайты с наведениями из стайлгайда*/
+.header-assets > li:nth-child(1):hover .hover.search {
+    display: block;
+}
+
+.header-assets > li:nth-child(2):hover .hover.login-form {
+    display: block;
+}
+
+.hover.search {
+    display: none;
+    position: absolute;
+    right: 8px;
+    /*  ## опять схлопывания - попросить помощь   top: 37px;*/
+    top: 30px;
+    font-size: 16px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    width: 311px;
+    padding: 20px 15px;
+    z-index: 200;
+    border-radius: 5px;
+}
+
+.hover.search input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hover.login-form {
+    display: none;
+    position: absolute;
+    right: 8px;
+    /*  ## опять схлопывания - попросить помощь   top: 37px;*/
+    top: 30px;
+    font-size: 16px;
+    background-color: rgb(248, 247, 244);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    z-index: 200;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 238px;
+}
+
+.hover.login-form input {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.hover.login-form .link-block {
+    float: right;
+    width: 120px;
+}
+
+.hover.login-form a {
+    font-size: 13px;
+    color: rgb(50, 50, 50);
+    line-height: 1.125;
+    text-align: left;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.hover.login-form a:hover,
+.hover.login-form a:active {
+    color: #e84d37;
+    border-color: #f9cdc4;
+}
+
+.hover.login-form .btn-submit {
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 11px 23px;
+    color: #fefefe;
+    cursor: pointer;
+    line-height: 1.333;
+    border: none;
+}
+
+.hover.login-form input {
+    /*    */
+}
+
+.hover.login-form input {
+    /*    */
+}
+
+.hover.search input {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 a.header-assets-search:after {
@@ -262,7 +346,7 @@ a.header-assets-search:hover:after {
     /*###Нарезать спрайты с наведениями из стайлгайда*/
 }
 
-a.header-assets-login {
+li > a.header-assets-login {
     padding-left: 41px;
     padding-right: 20px;
 }
@@ -286,7 +370,7 @@ a.header-assets-login:hover:after {
     /*###Нарезать спрайты с наведениями из стайлгайда*/
 }
 
-a.header-assets-cart {
+li > a.header-assets-cart {
     padding-left: 45px;
     padding-right: 34px;
 }
@@ -294,7 +378,7 @@ a.header-assets-cart {
 a.header-assets-cart:after {
     content: "";
     position: absolute;
-    width: 20px;
+    width: 25px;
     height: 20px;
     left: 14px;
     top: 5px;
@@ -511,6 +595,8 @@ header .time b {
 .production {
     font-size: 0;
     margin-bottom: 40px;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 
 .production article {
@@ -528,15 +614,6 @@ header .time b {
     padding-top: 6px;
     border-radius: 5px;
     background: transparent;
-}
-
-.production article:nth-child(1),
-.production article:nth-child(5n) {
-    padding-left: 0;
-}
-
-.production article:nth-child(4n) {
-    padding-right: 0;
 }
 
 .production-sticker {
@@ -732,16 +809,6 @@ header .time b {
 }
 
 .subscribe-form input[type="text"] {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(178, 178, 178);
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    font-size: 16px;
-    color: #323232;
-    line-height: 1.5;
-    text-align: left;
-    padding: 9px 15px;
     width: 338px;
     margin-right: 8px;
 }
@@ -993,6 +1060,16 @@ footer a:hover {
   font-weight: bold;
   line-height: 1.5;
 */
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(178, 178, 178);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    color: #323232;
+    line-height: 1.5;
+    text-align: left;
+    padding: 9px 15px;
 }
 
 .form-control input[type="text"]:hover,
@@ -1021,4 +1098,65 @@ footer a:hover {
 .form-control textarea:-ms-input-placeholder {
     color: #999999;
     font-weight: 300;
+}
+
+
+/* [[11]] модалка(и)  */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal.feedback {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: #f8f7f4;
+    margin-left: -238px;
+    margin-top: -221px;
+    width: 429px;
+    padding: 15px 24px 25px 24px;
+    z-index: 1100;
+}
+
+.modal.feedback .btn {
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 11px 20px;
+    color: #fefefe;
+    cursor: pointer;
+    line-height: 1.333;
+    border: none;
+    float:right;
+}
+
+.modal.feedback p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.modal.feedback input[type="text"] {
+    width: 235px;
+}
+
+.modal.feedback textarea {
+    width: 396px;
+    height: 135px;
+    margin-bottom: 4px;
+}
+
+.modal.feedback h3 {
+    font-size: 24px;
+    color: rgb(50, 50, 50);
+    line-height: 1.167;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
 }
