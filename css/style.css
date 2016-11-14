@@ -390,6 +390,22 @@ a.header-assets-cart:hover:after {
     background: url("../img/ico-cart-hover.png") no-repeat;
 }
 
+li > a.header-assets-cart-active {
+    padding-left: 45px;
+    padding-right: 34px;
+}
+
+a.header-assets-cart-active:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 14px;
+    top: 5px;
+    background: url("../img/ico-cart-active.png") no-repeat;
+    z-index: 20;
+}
+
 .header-assets > li:nth-child(3) a {
     margin-right: 0px;
 }
@@ -573,6 +589,7 @@ header .time b {
 }
 
 .promo-btn {
+    background-image: -webkit-linear-gradient( left, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     background-image: linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
     position: absolute;
@@ -655,6 +672,7 @@ header .time b {
     line-height: 1.375;
     text-align: center;
     padding-top: 14px;
+    -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
     text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -673,7 +691,6 @@ header .time b {
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     margin-bottom: -100px;
     /*    ##высчитать правильно*/
-    
     position: relative;
     z-index: 200;
 }
@@ -817,7 +834,6 @@ header .time b {
 }
 
 .subscribe-form .subscribe-submit {
-    background-image: -moz-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -834,7 +850,7 @@ header .time b {
 /* [[7]] карта с главной */
 
 .map {
-    background: url("../img/tmp-map.png") no-repeat;
+    background: #ff6600 url("../img/tmp-map.png") no-repeat;
     background-size: cover;
     min-height: 430px;
     margin-left: -24px;
@@ -867,6 +883,7 @@ header .time b {
 
 .feedback-btn {
     margin: 25px 0 10px;
+    background-image: -webkit-linear-gradient( left, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     background-image: linear-gradient( 90deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
     padding: 13px 27px;
@@ -887,6 +904,16 @@ header .time b {
 footer {
     margin-top: 35px;
     padding: 0 0 30px 0;
+    position: relative;
+}
+
+.topborder:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3)
 }
 
 footer a:hover {
@@ -1005,30 +1032,52 @@ footer a:hover {
 
 /* [[9]] продукты в категории */
 
-.products {
-    font-size: 0;
-    margin: 40px 0;
-}
-
-.products article {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 16px;
-    width: 268px;
-    padding-right: 12px;
-    padding-left: 12px;
-    text-align: center;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    line-height: 1.375;
-    text-decoration: underline;
-}
-
-.pagination {
+.paginator {
     display: block;
     margin-top: 40px;
     font-size: 14px;
-    /*    float: right;*/
+    float: right;
+    margin-bottom: 40px;
+}
+
+.paginator a,
+.paginator span {
+    display: inline-block;
+    border-radius: 50%;
+    min-width: 26px;
+    height: 26px;
+    /*    padding: 0 10px;*/
+    line-height: 26px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff;
+    /*    background-color: #fff;*/
+}
+
+.paginator .prev {
+    text-indent: -10000px;
+    background: url("../img/paginator-prev.png") no-repeat center center;
+}
+
+.paginator .next {
+    text-indent: -10000px;
+    background: url("../img/paginator-next.png") no-repeat center center;
+}
+
+.paginator .current,
+.paginator a:not(:first-child):not(:last-child):active {
+    background-color: #fff;
+    color: #000;
+}
+
+.paginator a:not(:first-child):not(:last-child):hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.paginator .disabled {
+    opacity: 0.2;
 }
 
 
@@ -1036,18 +1085,19 @@ footer a:hover {
 
 .btn {
     display: inline-block;
-    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 }
 
 .btn:hover {
+    background-image: -webkit-linear-gradient(rgb(231, 74, 53) 0%, rgb(245, 134, 105) 100%);
     background-image: linear-gradient(rgb(231, 74, 53) 0%, rgb(245, 134, 105) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.4);
     text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
 
 .btn:active {
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
     background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -1193,10 +1243,12 @@ footer a:hover {
 }
 
 .modal .close::before {
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
 .modal .close::after {
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -1205,37 +1257,73 @@ footer a:hover {
 }
 
 .animate {
+    -webkit-animation: bounce 0.6s;
     animation: bounce 0.6s;
 }
 
 .modal-error {
+    -webkit-animation: shake 0.6s;
     animation: shake 0.6s;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0% {
+        -webkit-transform: translateY(2000px);
         transform: translateY(2000px);
     }
     60% {
+        -webkit-transform: translateY(-40px);
         transform: translateY(-40px);
     }
     70% {
+        -webkit-transform: translateY(20px);
         transform: translateY(20px);
     }
     80% {
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     90% {
+        -webkit-transform: translateY(10px);
         transform: translateY(10px);
     }
     100% {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
 
-@keyframes shake {
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(2000px);
+        transform: translateY(2000px);
+    }
+    60% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    70% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    90% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes shake {
     0%,
     100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     10%,
@@ -1243,12 +1331,91 @@ footer a:hover {
     50%,
     70%,
     90% {
+        -webkit-transform: translateX(-20px);
         transform: translateX(-20px);
     }
     20%,
     40%,
     60%,
     80% {
+        -webkit-transform: translateX(20px);
         transform: translateX(20px);
     }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+}
+
+
+/* [[12]] catalog-item.html  */
+
+.content h1 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.171;
+    text-align: left;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.breadcrumbs li {
+    position: relative;
+    display: inline;
+    padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+    content: "»";
+    position: absolute;
+    top: 0;
+    right: 18px;
+}
+
+.breadcrumbs a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.breadcrumbs a:hover {
+    text-decoration: none;
+}
+
+.breadcrumbs .current {
+    color: #fff;
+}
+
+.breadcrumbs .current::after {
+    display: none;
+}
+
+.cart-hover {
+    display: none;
 }

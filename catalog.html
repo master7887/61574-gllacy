@@ -14,25 +14,25 @@
         <div class="container">
             <header class="row">
                 <div class="logo">
-                    <a href="/index.html"><img src="img/logo.svg" alt="GllacyShop"></a>
+                    <a href="index.html"><img src="img/logo.svg" alt="GllacyShop"></a>
                 </div>
 
 
                 <nav>
                     <ul class="main-nav">
-                        <li><a href="#">Каталог</a>
+                        <li class="active"><a href="#">Каталог</a>
 
                             <ul class="subnav">
                                 <li><a href="#">Новинки</a></li>
                                 <li><a href="catalog.html">Сливочное</a></li>
                                 <li><a href="#">Щербеты</a></li>
                                 <li><a href="#">Фруктовый лед</a></li>
-                                <li class="active"><a href="#">Мелорин</a></li>
+                                <li><a href="#">Мелорин</a></li>
                             </ul>
 
                         </li>
                         <li><a href="#">Доставка и оплата</a></li>
-                        <li class="active"><a href="#">О Компании</a></li>
+                        <li><a href="#">О Компании</a></li>
                     </ul>
                 </nav>
 
@@ -70,18 +70,44 @@
 
                     </li>
                     <li>
-                        <a href="#" class="header-assets-cart">Пусто</a>
+                        <a href="#" class="header-assets-cart-active">2 товара</a>
+
+                        <div class="hover cart-hover">
+                            <table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>Пломбир с апельсиновым джемом</td>
+                                    <td>1,5 кг х 200 руб.</td>
+                                    <td>300 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                                    <td>1,5 кг х 300 руб.</td>
+                                    <td>450 руб.</td>
+                                </tr>
+                            </table>
+                            <p class="summary">Итого: 750 руб</p>
+                            <br>
+                            <a href="#" class="btn btn-cart">Оформить заказ</a>
+                        </div>
+                        <!--hover cart-hover-->
                     </li>
                 </ul>
+                <!--header-assets-->
+
                 <div class="time">С 10 до 20, ежедневно
                     <b>8 812 450-25-25</b>
                 </div>
             </header>
-            <section class="content">
+
+            <section class="content row">
                 <ul class="breadcrumbs">
-                    <li><a href="#">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="#">Каталог</a></li>
-                    <li>Сливочное</li>
+                    <li class="current">Сливочное</li>
                 </ul>
                 <h1>Сливочное мороженое</h1>
                 <div class="filter">
@@ -127,12 +153,13 @@
                 </div>
                 <!-- filter-->
 
-                <section class="production catalog">
+                <section class="production catalog row">
 
                     <article class="production-item">
                         <div class="production-image"><img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
                         <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой
+                        </div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -141,9 +168,9 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-2.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада"></div>
+                        <div class="production-price">380 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочно-кофейное с кусочками шоколада</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -152,9 +179,9 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-3.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"></div>
+                        <div class="production-price">355 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочно-клубничное с присыпкой из белого шоколада</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -163,21 +190,9 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-4.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
-
-                        <div class="production-preview">
-                            <a href="" class="btn btn-preview">Быстрый просмотр</a>
-                        </div>
-                    </article>
-                    <!-- production-item-->
-                    
-
-                    <article class="production-item">
-                        <div class="production-image"><img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"></div>
+                        <div class="production-price">415 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочное крем-брюле с карамельной подливкой</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -185,10 +200,11 @@
                     </article>
                     <!-- production-item-->
 
+
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-2.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-5.jpg" alt="Сливочное с брусничным джемом"></div>
+                        <div class="production-price">325 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочное с брусничным джемом</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -197,9 +213,9 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-3.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-6.jpg" alt="Сливочно-черничное с цельными ягодами черники"></div>
+                        <div class="production-price">410 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочно-черничное с цельными ягодами черники </div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -208,21 +224,9 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-4.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
-
-                        <div class="production-preview">
-                            <a href="" class="btn btn-preview">Быстрый просмотр</a>
-                        </div>
-                    </article>
-                    <!-- production-item-->
-                    
-
-                    <article class="production-item">
-                        <div class="production-image"><img src="img/product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой"></div>
+                        <div class="production-price">375 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочно-лимонное с карамельной присыпкой</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -231,9 +235,21 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-2.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-8.jpg" alt="Сливочное с шоколадной стружкой"></div>
+                        <div class="production-price">320 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочное с шоколадной стружкой</div>
+
+                        <div class="production-preview">
+                            <a href="" class="btn btn-preview">Быстрый просмотр</a>
+                        </div>
+                    </article>
+                    <!-- production-item-->
+
+
+                    <article class="production-item">
+                        <div class="production-image"><img src="img/product-9.jpg" alt="Сливочно-ванильное с кусочками шоколада"></div>
+                        <div class="production-price">440 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочно-ванильное с кусочками шоколада</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -242,9 +258,9 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-3.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-10.jpg" alt="Сливочноe с ментоловым сиропом"></div>
+                        <div class="production-price">435 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочноe с ментоловым сиропом</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
@@ -253,46 +269,49 @@
                     <!-- production-item-->
 
                     <article class="production-item">
-                        <div class="production-image"><img src="img/product-4.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></div>
-                        <div class="production-price">310 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
-                        <div class="production-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
+                        <div class="production-image"><img src="img/product-11.jpg" alt="Сливочное с кусочками черного шоколада"></div>
+                        <div class="production-price">355 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочное с кусочками черного шоколада</div>
 
                         <div class="production-preview">
                             <a href="" class="btn btn-preview">Быстрый просмотр</a>
                         </div>
                     </article>
                     <!-- production-item-->
-                    
-                    
-                    
+
+                    <article class="production-item">
+                        <div class="production-image"><img src="img/product-12.jpg" alt="Сливочное с мятным сиропом"></div>
+                        <div class="production-price">420 <img src="img/ruble.svg" alt="Рублей"><span>/кг</span></div>
+                        <div class="production-title">Сливочное с мятным сиропом</div>
+
+                        <div class="production-preview">
+                            <a href="" class="btn btn-preview">Быстрый просмотр</a>
+                        </div>
+                    </article>
+                    <!-- production-item-->
+
+
+
                 </section>
 
-               
-                
-
-                <div class="pagination row">
-                    <ul>
-                        <li class="prev">
-                            <a href="#"></a>
-                        </li>
-                        <li class="active">1</li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li class="next">
-                            <a href="#"></a>
-                        </li>
-                    </ul>
+                <div class="paginator">
+                    <a class="prev disabled" href="#prev">Назад</a>
+                    <a class="current nothover" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a class="next nothover" href="#next">Вперёд</a>
                 </div>
-                <!--pagination-->
+                <!--paginator-->
+
             </section>
             <!--products-->
 
             </section>
             <!--content-->
 
-            <footer class="footer row">
+            <footer class="footer row topborder">
                 <div class="footer-social">
 
                     <a href="#" class="social social-tw"> </a>
