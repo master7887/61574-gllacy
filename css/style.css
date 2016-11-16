@@ -854,7 +854,6 @@ header .time b {
     width: 100%;
 }
 
-
 .map-overflow {
     background-color: #fff;
     float: right;
@@ -1683,7 +1682,7 @@ button {
     margin-right: -1px;
     margin-top: -1px;
 }
-
+ 
 .price .progress-bar {
     position: absolute;
     left: 14px;
@@ -1706,7 +1705,7 @@ button {
     padding-left: 31px;
     position: relative;
     margin-left: -3px;
-    margin-right: 18px;
+    margin-right: 16.6px;
 }
 
 .fatness label:last-child {
