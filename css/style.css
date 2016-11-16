@@ -39,7 +39,8 @@ h2 {
 
 .container {
     margin: 0 auto;
-    max-width: 1148px;
+    width: 1148px;
+    min-width: 1148px;
     /*    min-width: 848px;*/
     /*    width: 100%;*/
     padding: 0 26px;
@@ -81,6 +82,7 @@ header nav {
     vertical-align: top;
     margin-right: -2px;
     position: relative;
+    padding-bottom: 6px;
 }
 
 .main-nav > li > a {
@@ -138,7 +140,7 @@ header nav {
     left: -9px;
     /*   ### top: 36px; как сделать чтобы меню не закрывалось пока человек водит там мышкой от ссылки до выпадалки, примерно  6 пикселей выпадает  ?? */
     /*    padding-top: 6px;*/
-    top: 30px;
+    top: 36px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -201,6 +203,7 @@ header nav {
     vertical-align: top;
     margin-right: -3px;
     position: relative;
+    padding-bottom: 7px;
 }
 
 .header-assets > li:nth-child(3) {
@@ -251,7 +254,7 @@ li > a.header-assets-search {
     position: absolute;
     right: 8px;
     /*  ## опять схлопывания - попросить помощь   top: 37px;*/
-    top: 30px;
+    top: 37px;
     font-size: 16px;
     background-color: rgb(248, 247, 244);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -271,7 +274,7 @@ li > a.header-assets-search {
     position: absolute;
     right: 8px;
     /*  ## опять схлопывания - попросить помощь   top: 37px;*/
-    top: 30px;
+    top: 37px;
     font-size: 16px;
     background-color: rgb(248, 247, 244);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -347,7 +350,6 @@ a.header-assets-search:hover:after {
     background: url("../img/ico-search-hover.png") no-repeat;
 }
 
-
 li > a.header-assets-login {
     padding-left: 41px;
     padding-right: 20px;
@@ -367,7 +369,6 @@ a.header-assets-login:after {
 a.header-assets-login:hover:after {
     background: url("../img/ico-enter-hover.png") no-repeat;
 }
-
 
 li > a.header-assets-cart {
     padding-left: 45px;
@@ -1088,6 +1089,13 @@ footer a:hover {
     display: inline-block;
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    outline: none
+}
+
+a,
+input,
+button {
+    outline: none
 }
 
 .btn:hover {
@@ -1251,10 +1259,6 @@ footer a:hover {
 .modal .close::after {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-}
-
-.show {
-    display: block !important;
 }
 
 .animate {
@@ -1427,7 +1431,7 @@ footer a:hover {
     background: #f8f7f4;
     border-radius: 5px;
     /* ### подумать со схлопываниями   top: 35px;*/
-    top: 30px;
+    top: 35px;
     right: 0;
     width: 507px;
     padding: 17px 17px;
@@ -1535,7 +1539,7 @@ footer a:hover {
     margin-top: -3px;
 }
 
-.production article {
+.catalog article {
     margin-bottom: 32px;
 }
 
@@ -1573,8 +1577,6 @@ footer a:hover {
     width: 180px;
 }
 
-
-
 .sort .filter-type {
     display: block;
     min-width: 194px;
@@ -1595,15 +1597,9 @@ footer a:hover {
     appearance: none;
     text-overflow: ellipsis;
     margin-top: 8px;
-    
-    
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  line-height: 1.125;
-
-    
-    
-    
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.125;
 }
 
 .sort .filter-type::-ms-expand {
@@ -1616,7 +1612,7 @@ footer a:hover {
 
 .sort .filter-type-container::after {
     content: '';
-    position: absolute;    
+    position: absolute;
     top: 15px;
     right: 15px;
     width: 0px;
@@ -1633,18 +1629,19 @@ footer a:hover {
     color: #000000;
 }
 
-.sort .filter-type-container:hover::after {    
+.sort .filter-type-container:hover::after {
     border-top-color: #000000;
 }
-
 
 .price {
     width: 202px;
     position: relative;
 }
+
 .price .filter-content {
     min-height: 20px;
 }
+
 .price .progress-bar-fill {
     position: absolute;
     left: 40px;
@@ -1839,4 +1836,8 @@ footer a:hover {
     border-color: #eaeaea;
     color: #353535;
     box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+}
+
+.show {
+    display: block;
 }
