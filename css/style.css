@@ -6,6 +6,7 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 body > input[type="radio"] {
@@ -25,6 +26,7 @@ body > input[type="radio"] {
 
 .site-wrapper {
     padding-top: 7px;
+    width: 100%;
 }
 
 h1 {}
@@ -41,11 +43,8 @@ h2 {
     margin: 0 auto;
     width: 1148px;
     min-width: 1148px;
-    /*    min-width: 848px;*/
-    /*    width: 100%;*/
     padding: 0 26px;
     position: relative;
-    /*    пока временно так отступы обозначу - потом или медиазапросы или в процентах попробую просчитать */
 }
 
 
@@ -852,9 +851,9 @@ header .time b {
     background: #ff6600 url("../img/tmp-map.png") no-repeat;
     background-size: cover;
     min-height: 430px;
-    margin-left: -24px;
-    margin-right: -24px;
+    width: 100%;
 }
+
 
 .map-overflow {
     background-color: #fff;
