@@ -1200,6 +1200,7 @@ footer a:hover
     opacity: .8;
     border: 3px solid rgba(255, 255, 255, .5);
     border-radius: 50%;
+    vertical-align: top;
 }
 
 .footer-social a:hover
@@ -1398,6 +1399,8 @@ footer a:hover
 .btn
 {
     display: inline-block;
+    
+    vertical-align: top;
 
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
@@ -2181,6 +2184,9 @@ textarea
     position: relative;
     display: inline-block;
     
+    
+    vertical-align: top;
+    
     margin-right: 16.6px;
     margin-left: -3px;
     padding-left: 31px;
@@ -2255,6 +2261,8 @@ textarea
 {
     position: relative;
     display: inline-block;
+    
+    vertical-align: top;
 
     margin-right: 22px;
     margin-left: -3px;
