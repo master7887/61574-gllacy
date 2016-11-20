@@ -59,7 +59,7 @@ h2
     position: relative;
 
     width: 1148px;
-    min-width: 1148px;
+
     margin: 0 auto;
     padding: 0 26px;
 }
@@ -506,6 +506,9 @@ li > a.header-assets-cart-active
 {
     padding-right: 34px;
     padding-left: 45px;
+    
+    color: #373737;
+    background-color: #fff;
 }
 
 a.header-assets-cart-active:after
@@ -591,7 +594,7 @@ header .time b
     line-height: 1;
     
     width: 700px;
-    margin: 0 auto 31px;
+    margin: 0 auto 27px;
 
     text-align: center;
 
@@ -617,7 +620,7 @@ header .time b
 
 .slider-controls
 {
-    margin-top: -80px;
+    
 }
 
 
@@ -640,7 +643,9 @@ header .time b
 {
     background-image: url("../img/icecream3.png");
 }
-
+.slider {
+    position: relative;
+}
 .slider-item
 {
     display: none;
@@ -652,8 +657,8 @@ header .time b
 
     position: absolute;
     z-index: 20;
-    top: 634px;
-    left: 26px;
+    bottom: 24px;
+    left: 2px;
 }
 
 .slider-controls label
@@ -729,22 +734,25 @@ header .time b
 {
     float: left;
 
-    background: url("../img/bg-topblock-strawberry.jpg") no-repeat, #870327;
+    background: #870327 url("../img/bg-topblock-strawberry.jpg") no-repeat;
 }
 
 .promo-right
 {
     float: right;
 
-    background: url("../img/bg-topblock-chocoklate.jpg") no-repeat, #4c2c1e;
+    background: #4c2c1e url("../img/bg-topblock-chocoklate.jpg") no-repeat;
 }
 
-.promo-title
+.promotions h2
 {
+    color: #fff;
+    
     font-size: 35px;
     font-weight: bold;
     line-height: 41px;
 
+    margin-top: 0;
     margin-bottom: 14px;
 }
 
@@ -753,6 +761,8 @@ header .time b
     font-size: 18px;
     font-weight: bold;
     line-height: 1.222;
+    
+    padding-bottom: 60px;
 
     color: #ffffff;
 }
@@ -788,7 +798,7 @@ header .time b
     font-size: 0;
 
     margin-right: -12px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     margin-left: -12px;
 }
 
@@ -1035,7 +1045,6 @@ header .time b
     float: right;
 
     width: 552px;
-    min-height: 144px;
     min-height: 210px;
     padding: 5px;
 
@@ -1131,7 +1140,6 @@ header .time b
     font-weight: bold;
     line-height: 27px;
     
-    display: block;
 }
 
 .feedback-btn
@@ -1159,13 +1167,20 @@ header .time b
 
 /* [[8]] футер - блоки */
 
+
+footer.topborder {
+    margin-top: 28px;
+
+}
 footer
 {
     position: relative;
 
-    margin-top: 28px;
+    margin-top: 36px;
     padding: 0 0 30px 0;
 }
+
+
 
 .topborder:before
 {
@@ -1543,7 +1558,7 @@ textarea
     border-radius: 20px;
 }
 
-.modal.feedback p
+.modal.feedback div
 {
     margin: 0;
     margin-bottom: 20px;
@@ -2033,10 +2048,7 @@ textarea
     max-width: 230px;
     margin-top: 8px;
     margin-left: -16px;
-    padding-top: 6px;
-    padding-right: 25px;
-    padding-bottom: 12px;
-    padding-left: 11px;
+    padding: 8px 20px 10px 16px;
 
     cursor: pointer;
     text-overflow: ellipsis;
