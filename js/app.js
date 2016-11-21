@@ -10,7 +10,7 @@
 
          var subscribe = document.querySelector(".subscribe");
          var subscribe_form = subscribe.querySelector("form");
-         var subscribe_email = subscribe.querySelector("[name=email]");
+         var subscribe_email = subscribe.querySelector("[name=subscribe_email]");
          var subscribe_storage = localStorage.getItem("subscribe_email");
 
 
@@ -23,7 +23,7 @@
 
 
          link.addEventListener("click", function (event) {
-             event.preventDefault();
+             event.preventDefault ? event.preventDefault() : (event.returnValue=false);
              popup.classList.add("show");
              popup.classList.add("animate");
              overlay.classList.add("show");
@@ -38,7 +38,7 @@
          });
 
          close.addEventListener("click", function (event) {
-             event.preventDefault();
+             event.preventDefault ? event.preventDefault() : (event.returnValue=false);
              popup.classList.remove("show");
              popup.classList.remove("animate");
              overlay.classList.remove("show");
@@ -47,7 +47,7 @@
 
 
          overlay.addEventListener("click", function (event) {
-             event.preventDefault();
+             event.preventDefault ? event.preventDefault() : (event.returnValue=false);
              popup.classList.remove("show");
              popup.classList.remove("animate");
              overlay.classList.remove("show");
@@ -56,7 +56,7 @@
 
          form.addEventListener("submit", function (event) {
              if (!username.value || !email.value) {
-                 event.preventDefault();
+                 event.preventDefault ? event.preventDefault() : (event.returnValue=false);
                  popup.classList.remove("modal-error");
                  popup.offsetWidth = popup.offsetWidth;
                  popup.classList.add("modal-error");
@@ -79,7 +79,7 @@
 
          subscribe_form.addEventListener("submit", function (event) {
              if (!subscribe_email.value) {
-                 event.preventDefault();
+                 event.preventDefault ? event.preventDefault() : (event.returnValue=false);
                  subscribe.classList.remove("modal-error");
                  subscribe.offsetWidth = subscribe.offsetWidth;
                  subscribe.classList.add("modal-error");

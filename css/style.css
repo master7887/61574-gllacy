@@ -1287,15 +1287,15 @@ footer a:hover
 .footer-nav li:nth-child(1),
 .footer-nav li:nth-child(3)
 {
-    width: 111px;
+    width: 131px;
     padding-left: 40px;
 }
 
 .footer-nav li:nth-child(2),
 .footer-nav li:nth-child(4)
 {
-    width: 170px;
-    padding-left: 34px;
+    width: 180px;
+    padding-left: 14px;
 }
 
 .footer-nav li:nth-child(1)::before
@@ -2078,7 +2078,7 @@ textarea
             appearance: none;
 }
 
-.sort .filter-type:-ms-expand
+.sort .filter-type::-ms-expand
 {
     display: none;
 }
@@ -2333,7 +2333,7 @@ textarea
 
     content: "";
 
-    background: url("../img/checkbox-checked.png") no-repeat center;
+    background: url("../img/checkbox-checked.png") no-repeat center center;
 }
 
 .contains input[type="checkbox"] + label:hover::before
